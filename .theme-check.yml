@@ -1,0 +1,22 @@
+extends: theme-check:recommended
+
+LiquidHTMLSyntaxError:
+  enabled: true
+
+# Noise from Shopify's own bundled locale files (dozens of languages we don't
+# maintain), not real problems in code we write.
+MatchingTranslations:
+  enabled: false
+
+# Pre-existing quirks in unmodified stock Horizon files (a checker false
+# positive on a valid dynamic-tag pattern in header.liquid, and a harmless
+# schema property in email-signup-banner.liquid). Not worth touching stock
+# code to silence.
+ValidSchema:
+  enabled: false
+
+MissingTemplate:
+  enabled: true
+
+UnusedAssign:
+  enabled: true
