@@ -36,6 +36,7 @@
       ],
       "custom_css": [],
       "settings": {
+        "image": "shopify:\/\/shop_images\/libaas-hero-pattern.svg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
