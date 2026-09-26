@@ -1,0 +1,300 @@
+<title>Libaas brand kit</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg: #FAF7F2;
+    --surface: #FFFFFF;
+    --surface-sunken: #F1ECE2;
+    --text: #1C1B19;
+    --text-secondary: #5B564C;
+    --border: #E4DCCC;
+    --accent: #8C6D34;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17130E;
+      --surface: #221D16;
+      --surface-sunken: #2B2419;
+      --text: #F3EEE4;
+      --text-secondary: #B9AF9E;
+      --border: #3A3125;
+      --accent: #D2AE6D;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17130E;
+    --surface: #221D16;
+    --surface-sunken: #2B2419;
+    --text: #F3EEE4;
+    --text-secondary: #B9AF9E;
+    --border: #3A3125;
+    --accent: #D2AE6D;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-block: 48px 64px;
+  }
+  h1, h2 {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-weight: 700;
+    text-wrap: balance;
+    margin: 0;
+  }
+  h1 { font-size: clamp(30px, 6vw, 42px); letter-spacing: 0.2px; }
+  h2 { font-size: 22px; margin-bottom: 4px; }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+  .lede {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 56ch;
+    margin: 14px 0 0;
+  }
+  section {
+    margin-top: 56px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+  section:first-of-type { border-top: none; }
+  .section-head { margin-bottom: 24px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+  }
+  .logo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 40px 24px;
+  }
+  .logo-card svg { max-width: 100%; height: auto; }
+  .lockup { width: 340px; }
+  .mark-row { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; justify-content: center; }
+  .mark { width: 64px; }
+  .mark-caption { font-size: 12px; color: var(--text-secondary); text-align: center; margin-top: 8px; }
+  .mark-item { display: flex; flex-direction: column; align-items: center; }
+
+  .swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 14px;
+  }
+  .swatch {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .swatch-color { height: 84px; }
+  .swatch-info { padding: 12px 14px; }
+  .swatch-name { font-size: 13px; font-weight: 600; margin: 0 0 2px; }
+  .swatch-hex { font-size: 12px; color: var(--text-secondary); margin: 0; font-variant-numeric: tabular-nums; }
+
+  .type-sample { display: flex; flex-direction: column; gap: 22px; }
+  .type-row { display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap; }
+  .type-label { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-secondary); width: 84px; flex-shrink: 0; }
+  .type-h1-demo { font-family: 'Playfair Display', Georgia, serif; font-size: 30px; font-weight: 700; }
+  .type-h2-demo { font-family: 'Playfair Display', Georgia, serif; font-size: 21px; font-weight: 700; }
+  .type-body-demo { font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.6; max-width: 46ch; color: var(--text-secondary); }
+  .type-label-demo { font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+
+  .pattern-frame { border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+  .pattern-frame svg { display: block; width: 100%; height: auto; }
+  .pattern-overlay { position: relative; }
+  .pattern-overlay .caption {
+    position: absolute; left: 24px; bottom: 20px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px; color: #1C1B19;
+  }
+
+  .rules { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 560px) { .rules { grid-template-columns: 1fr; } }
+  .rule-card { padding: 18px 20px; border-radius: 12px; }
+  .rule-do { background: var(--surface); border: 1px solid var(--border); }
+  .rule-dont { background: var(--surface-sunken); border: 1px solid var(--border); }
+  .rule-title { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; margin: 0 0 10px; }
+  .rule-do .rule-title { color: #5C7A5E; }
+  .rule-dont .rule-title { color: #A65D5D; }
+  .rule-card ul { margin: 0; padding-left: 18px; font-size: 13.5px; line-height: 1.7; color: var(--text-secondary); }
+
+  footer { margin-top: 64px; font-size: 12px; color: var(--text-secondary); text-align: center; }
+</style>
+
+<div class="wrap">
+
+  <div class="eyebrow">Brand kit &middot; v1</div>
+  <h1>Dean&#8217;s Libaas</h1>
+  <p class="lede">A working reference for the visual identity: logo, palette, type, and the hairline motif used across the storefront. Minimal, warm-neutral, and built to sit comfortably across womenswear, menswear, accessories, and fragrance.</p>
+
+  <section>
+    <div class="section-head">
+      <h2>Logo</h2>
+    </div>
+    <div class="card logo-card">
+      <svg class="lockup" viewBox="0 0 460 76" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dean's Libaas wordmark">
+        <text x="0" y="42" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="36" letter-spacing="0.5" fill="#1C1B19">Dean&#8217;s Libaas</text>
+        <text x="2" y="64" font-family="Georgia, 'Times New Roman', serif" font-size="11" letter-spacing="3.5" fill="#B08D46">LUXURY PAKISTANI FASHION</text>
+      </svg>
+      <div class="mark-row">
+        <div class="mark-item">
+          <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Favicon monogram">
+            <rect width="100" height="100" fill="#1C1B19"/>
+            <text x="50" y="66" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="52" text-anchor="middle" fill="#FAF7F2">D</text>
+          </svg>
+          <div class="mark-caption">Favicon monogram</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Colour palette</h2>
+    </div>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FAF7F2;"></div>
+        <div class="swatch-info">
+          <p class="swatch-name">Paper</p>
+          <p class="swatch-hex">#FAF7F2</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#EDE6D8;"></div>
+        <div class="swatch-info">
+          <p class="swatch-name">Paper deep</p>
+          <p class="swatch-hex">#EDE6D8</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1C1B19;"></div>
+        <div class="swatch-info">
+          <p class="swatch-name">Ink</p>
+          <p class="swatch-hex">#1C1B19</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#B08D46;"></div>
+        <div class="swatch-info">
+          <p class="swatch-name">Gold</p>
+          <p class="swatch-hex">#B08D46</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Typography</h2>
+    </div>
+    <div class="card type-sample">
+      <div class="type-row">
+        <span class="type-label">Heading</span>
+        <span class="type-h1-demo">Latest Luxury Pret</span>
+      </div>
+      <div class="type-row">
+        <span class="type-label">Subhead</span>
+        <span class="type-h2-demo">Shop by range</span>
+      </div>
+      <div class="type-row">
+        <span class="type-label">Body</span>
+        <span class="type-body-demo">Premium ready-to-wear, designed to stand out for daily wear or special occasions &mdash; new styles added weekly.</span>
+      </div>
+      <div class="type-row">
+        <span class="type-label">Label</span>
+        <span class="type-label-demo">Luxury Pakistani Fashion</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Hairline motif</h2>
+      <p class="lede" style="margin-top:6px;">A faceted-diamond hairline pattern, used as a quiet hero background until product photography is ready.</p>
+    </div>
+    <div class="pattern-frame pattern-overlay">
+      <svg viewBox="0 0 1600 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hairline diamond pattern on ivory">
+        <rect width="1600" height="700" fill="#FAF7F2"/>
+        <g fill="none" stroke="#EDE6D8" stroke-width="1.5">
+          <g transform="translate(0,0)">
+            <rect x="60" y="60" width="90" height="90" transform="rotate(45 105 105)"/>
+            <rect x="260" y="60" width="90" height="90" transform="rotate(45 305 105)"/>
+            <rect x="460" y="60" width="90" height="90" transform="rotate(45 505 105)"/>
+            <rect x="660" y="60" width="90" height="90" transform="rotate(45 705 105)"/>
+            <rect x="860" y="60" width="90" height="90" transform="rotate(45 905 105)"/>
+            <rect x="1060" y="60" width="90" height="90" transform="rotate(45 1105 105)"/>
+            <rect x="1260" y="60" width="90" height="90" transform="rotate(45 1305 105)"/>
+            <rect x="1460" y="60" width="90" height="90" transform="rotate(45 1505 105)"/>
+          </g>
+          <g transform="translate(160,180)">
+            <rect x="60" y="60" width="90" height="90" transform="rotate(45 105 105)"/>
+            <rect x="260" y="60" width="90" height="90" transform="rotate(45 305 105)"/>
+            <rect x="460" y="60" width="90" height="90" transform="rotate(45 505 105)"/>
+            <rect x="660" y="60" width="90" height="90" transform="rotate(45 705 105)"/>
+            <rect x="860" y="60" width="90" height="90" transform="rotate(45 905 105)"/>
+            <rect x="1060" y="60" width="90" height="90" transform="rotate(45 1105 105)"/>
+            <rect x="1260" y="60" width="90" height="90" transform="rotate(45 1305 105)"/>
+          </g>
+          <g transform="translate(0,360)">
+            <rect x="60" y="60" width="90" height="90" transform="rotate(45 105 105)"/>
+            <rect x="260" y="60" width="90" height="90" transform="rotate(45 305 105)"/>
+            <rect x="460" y="60" width="90" height="90" transform="rotate(45 505 105)"/>
+            <rect x="660" y="60" width="90" height="90" transform="rotate(45 705 105)"/>
+            <rect x="860" y="60" width="90" height="90" transform="rotate(45 905 105)"/>
+            <rect x="1060" y="60" width="90" height="90" transform="rotate(45 1105 105)"/>
+            <rect x="1260" y="60" width="90" height="90" transform="rotate(45 1305 105)"/>
+            <rect x="1460" y="60" width="90" height="90" transform="rotate(45 1505 105)"/>
+          </g>
+        </g>
+        <line x1="0" y1="350" x2="1600" y2="350" stroke="#B08D46" stroke-width="1" opacity="0.5"/>
+      </svg>
+      <div class="caption">Dean&#8217;s Libaas</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Usage</h2>
+    </div>
+    <div class="rules">
+      <div class="rule-card rule-do">
+        <p class="rule-title">Do</p>
+        <ul>
+          <li>Keep the emblem's proportions and centre line intact when resizing</li>
+          <li>Use gold sparingly &mdash; as an accent, not a fill</li>
+          <li>Let product photography carry colour once it's available</li>
+        </ul>
+      </div>
+      <div class="rule-card rule-dont">
+        <p class="rule-title">Don&#8217;t</p>
+        <ul>
+          <li>Recolour the emblem outside ink / gold / paper</li>
+          <li>Stretch the wordmark disproportionately</li>
+          <li>Add drop shadows or gradients to the mark</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>Reference for Dean&#8217;s Libaas theme &amp; storefront work.</footer>
+</div>
