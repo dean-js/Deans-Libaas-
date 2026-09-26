@@ -1,4 +1,7 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <rect width="100" height="100" fill="#1C1B19"/>
-  <text x="50" y="66" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="52" text-anchor="middle" fill="#FAF7F2">D</text>
+  <g fill="none" stroke="#FAF7F2" stroke-width="2.4">
+    <rect x="30" y="30" width="40" height="40" transform="rotate(45 50 50)"/>
+  </g>
+  <line x1="50" y1="14" x2="50" y2="86" stroke="#B08D46" stroke-width="2.4"/>
 </svg>
