@@ -89,6 +89,20 @@
       padding-top: 0.5rem;
     }
   }
+
+  .nav-badge-coming-soon {
+    display: inline-block;
+    margin-left: 0.6rem;
+    padding: 0.1rem 0.7rem;
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    line-height: 1.6;
+    color: #B08D46;
+    border: 1px solid #B08D46;
+    border-radius: 3rem;
+    vertical-align: middle;
+  }
 </style>
 
 {%- style -%}
@@ -222,6 +236,9 @@
                         {%- else -%}
                           <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
                             {{ link.title | escape }}
+                            {%- if link.title contains 'Fragrances' -%}
+                              <span class="nav-badge-coming-soon">Coming Soon</span>
+                            {%- endif -%}
                           </a>
                         {%- endif -%}
                       </li>
@@ -507,6 +524,9 @@
                 {%- else -%}
                   <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                     <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                    {%- if link.title contains 'Fragrances' -%}
+                      <span class="nav-badge-coming-soon">Coming Soon</span>
+                    {%- endif -%}
                   </a>
                 {%- endif -%}
               </li>
@@ -552,6 +572,9 @@
                 {%- else -%}
                   <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                     <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                    {%- if link.title contains 'Fragrances' -%}
+                      <span class="nav-badge-coming-soon">Coming Soon</span>
+                    {%- endif -%}
                   </a>
                 {%- endif -%}
               </li>
