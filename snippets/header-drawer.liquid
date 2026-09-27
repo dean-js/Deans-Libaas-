@@ -135,6 +135,9 @@
                         class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
                       >
                         <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
+                        {%- if link.title == 'Fragrances' or link.title == 'Accessories' -%}
+                          <span class="nav-badge-coming-soon">Coming Soon</span>
+                        {%- endif -%}
                         <span class="svg-wrapper icon-plus">
                           {{- 'icon-plus.svg' | inline_asset_content -}}
                         </span>
@@ -199,6 +202,9 @@
                     {% endif %}
                   >
                     <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
+                    {%- if link.title == 'Fragrances' or link.title == 'Accessories' -%}
+                      <span class="nav-badge-coming-soon">Coming Soon</span>
+                    {%- endif -%}
                   </a>
                   {% liquid
                     assign render_link_image = false
@@ -253,6 +259,9 @@
                     {% endif %}
                   >
                     <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
+                    {%- if link.title == 'Fragrances' or link.title == 'Accessories' -%}
+                      <span class="nav-badge-coming-soon">Coming Soon</span>
+                    {%- endif -%}
                   </a>
                 {% endif %}
               </li>
@@ -282,6 +291,9 @@
                       on:click="header-drawer/open/submenu"
                     >
                       <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
+                      {%- if link.title == 'Fragrances' or link.title == 'Accessories' -%}
+                        <span class="nav-badge-coming-soon">Coming Soon</span>
+                      {%- endif -%}
                       <span class="svg-wrapper icon-caret icon-caret--forward">
                         {{- 'icon-caret.svg' | inline_asset_content -}}
                       </span>
@@ -311,6 +323,9 @@
                             {% endif %}
                           >
                             <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
+                            {%- if link.title == 'Fragrances' or link.title == 'Accessories' -%}
+                              <span class="nav-badge-coming-soon">Coming Soon</span>
+                            {%- endif -%}
                           </a>
                           <button
                             class="button button-unstyled close-button menu-drawer__close-button focus-inset"
@@ -582,6 +597,9 @@
                     {% endif %}
                   >
                     <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
+                    {%- if link.title == 'Fragrances' or link.title == 'Accessories' -%}
+                      <span class="nav-badge-coming-soon">Coming Soon</span>
+                    {%- endif -%}
                   </a>
                 {%- endif -%}
               </li>

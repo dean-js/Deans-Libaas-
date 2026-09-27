@@ -55,6 +55,9 @@
                   {% endif %}
                 >
                   {{- link.title -}}
+                  {%- if link.title == 'Fragrances' or link.title == 'Accessories' -%}
+                    <span class="nav-badge-coming-soon">Coming Soon</span>
+                  {%- endif -%}
                 </a>
               </li>
             {% endfor %}
@@ -112,6 +115,9 @@
             ref="menuitem"
           >
             <span class="menu-list__link-title">{{- link.title -}}</span>
+            {%- if link.title == 'Fragrances' or link.title == 'Accessories' -%}
+              <span class="nav-badge-coming-soon">Coming Soon</span>
+            {%- endif -%}
           </a>
           {%- if link.links != blank -%}
             <button

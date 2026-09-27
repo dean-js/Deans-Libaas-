@@ -1,0 +1,75 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#FAF7F2"/>
+
+  <!-- soft field texture: faint hairline diamonds -->
+  <g fill="none" stroke="#EDE6D8" stroke-width="1.5">
+    <g transform="translate(-40,-40)">
+      <rect x="60" y="60" width="110" height="110" transform="rotate(45 115 115)"/>
+      <rect x="300" y="60" width="110" height="110" transform="rotate(45 355 115)"/>
+      <rect x="540" y="60" width="110" height="110" transform="rotate(45 595 115)"/>
+      <rect x="780" y="60" width="110" height="110" transform="rotate(45 835 115)"/>
+      <rect x="1020" y="60" width="110" height="110" transform="rotate(45 1075 115)"/>
+      <rect x="1260" y="60" width="110" height="110" transform="rotate(45 1315 115)"/>
+      <rect x="1500" y="60" width="110" height="110" transform="rotate(45 1555 115)"/>
+      <rect x="1740" y="60" width="110" height="110" transform="rotate(45 1795 115)"/>
+    </g>
+    <g transform="translate(80,190)">
+      <rect x="60" y="60" width="110" height="110" transform="rotate(45 115 115)"/>
+      <rect x="300" y="60" width="110" height="110" transform="rotate(45 355 115)"/>
+      <rect x="540" y="60" width="110" height="110" transform="rotate(45 595 115)"/>
+      <rect x="780" y="60" width="110" height="110" transform="rotate(45 835 115)"/>
+      <rect x="1020" y="60" width="110" height="110" transform="rotate(45 1075 115)"/>
+      <rect x="1260" y="60" width="110" height="110" transform="rotate(45 1315 115)"/>
+      <rect x="1500" y="60" width="110" height="110" transform="rotate(45 1555 115)"/>
+    </g>
+    <g transform="translate(-40,420)">
+      <rect x="60" y="60" width="110" height="110" transform="rotate(45 115 115)"/>
+      <rect x="300" y="60" width="110" height="110" transform="rotate(45 355 115)"/>
+      <rect x="540" y="60" width="110" height="110" transform="rotate(45 595 115)"/>
+      <rect x="780" y="60" width="110" height="110" transform="rotate(45 835 115)"/>
+      <rect x="1020" y="60" width="110" height="110" transform="rotate(45 1075 115)"/>
+      <rect x="1260" y="60" width="110" height="110" transform="rotate(45 1315 115)"/>
+      <rect x="1500" y="60" width="110" height="110" transform="rotate(45 1555 115)"/>
+      <rect x="1740" y="60" width="110" height="110" transform="rotate(45 1795 115)"/>
+    </g>
+    <g transform="translate(80,650)">
+      <rect x="60" y="60" width="110" height="110" transform="rotate(45 115 115)"/>
+      <rect x="300" y="60" width="110" height="110" transform="rotate(45 355 115)"/>
+      <rect x="540" y="60" width="110" height="110" transform="rotate(45 595 115)"/>
+      <rect x="780" y="60" width="110" height="110" transform="rotate(45 835 115)"/>
+      <rect x="1020" y="60" width="110" height="110" transform="rotate(45 1075 115)"/>
+      <rect x="1260" y="60" width="110" height="110" transform="rotate(45 1315 115)"/>
+      <rect x="1500" y="60" width="110" height="110" transform="rotate(45 1555 115)"/>
+    </g>
+    <g transform="translate(-40,880)">
+      <rect x="60" y="60" width="110" height="110" transform="rotate(45 115 115)"/>
+      <rect x="300" y="60" width="110" height="110" transform="rotate(45 355 115)"/>
+      <rect x="540" y="60" width="110" height="110" transform="rotate(45 595 115)"/>
+      <rect x="780" y="60" width="110" height="110" transform="rotate(45 835 115)"/>
+      <rect x="1020" y="60" width="110" height="110" transform="rotate(45 1075 115)"/>
+      <rect x="1260" y="60" width="110" height="110" transform="rotate(45 1315 115)"/>
+      <rect x="1500" y="60" width="110" height="110" transform="rotate(45 1555 115)"/>
+      <rect x="1740" y="60" width="110" height="110" transform="rotate(45 1795 115)"/>
+    </g>
+  </g>
+
+  <!-- gentle vignette so the right side stays calm for content -->
+  <rect x="960" width="960" height="1080" fill="#FAF7F2" opacity="0.55"/>
+
+  <!-- focal diamond motif, right of centre -->
+  <g transform="translate(1360,540)">
+    <rect x="-220" y="-220" width="440" height="440" transform="rotate(45)" fill="none" stroke="#1C1B19" stroke-width="2"/>
+    <rect x="-150" y="-150" width="300" height="300" transform="rotate(45)" fill="none" stroke="#B08D46" stroke-width="2"/>
+    <rect x="-80" y="-80" width="160" height="160" transform="rotate(45)" fill="none" stroke="#1C1B19" stroke-width="1.5"/>
+    <line x1="0" y1="-320" x2="0" y2="320" stroke="#B08D46" stroke-width="1.5" opacity="0.7"/>
+    <line x1="-320" y1="0" x2="320" y2="0" stroke="#B08D46" stroke-width="1.5" opacity="0.7"/>
+  </g>
+
+  <!-- wordmark lockup, lower-left -->
+  <g transform="translate(160,760)">
+    <text x="0" y="0" font-family="'Century Gothic', 'Futura', 'Poppins', Arial, sans-serif" font-size="88" letter-spacing="1" fill="#1C1B19">Dean&#8217;s Libaas</text>
+    <line x1="4" y1="34" x2="620" y2="34" stroke="#B08D46" stroke-width="2"/>
+    <text x="4" y="86" font-family="'Century Gothic', 'Futura', Arial, sans-serif" font-size="24" letter-spacing="6" fill="#B08D46">LUXURY PAKISTANI FASHION</text>
+    <text x="4" y="132" font-family="'Century Gothic', 'Futura', Arial, sans-serif" font-size="18" letter-spacing="3.5" fill="#5B564C">MEN &#183; WOMEN &#183; FRAGRANCES &#183; ACCESSORIES</text>
+  </g>
+</svg>
