@@ -155,23 +155,6 @@
             "padding-inline-end": 0
           }
         },
-        "menu_main": {
-          "type": "menu",
-          "settings": {
-            "menu": "main-menu",
-            "heading": "",
-            "menu_spacing": 12,
-            "show_as_accordion": false,
-            "accordion_icon": "plus",
-            "accordion_dividers": false,
-            "heading_preset": "paragraph",
-            "link_preset": "paragraph",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          }
-        },
         "logo_brand": {
           "type": "logo",
           "name": "t:names.logo",
@@ -217,8 +200,7 @@
         "logo_brand",
         "text_brand_tagline",
         "group_wErUQf",
-        "menu_footer",
-        "menu_main"
+        "menu_footer"
       ],
       "name": "t:names.footer",
       "settings": {

@@ -3,6 +3,11 @@
   if section.settings.background_color != blank
     render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
   endif
+
+  assign collection_is_empty = false
+  if section.settings.collection != blank and section.settings.collection.products_count == 0
+    assign collection_is_empty = true
+  endif
 %}
 
 <div
@@ -26,6 +31,14 @@
   <div class="section-resource-list__header">
     {%- content_for 'block', type: '_product-list-content', id: 'static-header' -%}
   </div>
+
+  {% if collection_is_empty %}
+    <div class="section-resource-list__empty" style="padding-block: 3rem; text-align: center;">
+      <p style="font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgb(var(--color-foreground-rgb, var(--color-foreground)) / 0.55);">
+        Coming Soon
+      </p>
+    </div>
+  {% else %}
 
   {% capture list_items %}
     {% if section.settings.collection != blank and shop.products_count != 0 %}
@@ -75,6 +88,7 @@
     content_type: 'products',
     test_id: 'resource-list-grid'
   %}
+  {% endif %}
 
   <div
     class="section-resource-list__content"

@@ -108,12 +108,17 @@
       {% render 'price-styles' %}
       {% render 'product-card-gallery-zoom-details-styles' %}
       <div class="main-collection-grid__empty">
-        <h2 class="main-collection-grid__empty-title h2">
-          {{ 'content.no_products_found' | t }}
-        </h2>
-        <p>
-          {{ 'content.use_fewer_filters_html' | t: link: collection.url, class: 'main-collection-grid__empty-link' }}
-        </p>
+        {% if collection != blank and collection.products_count == 0 %}
+          <h2 class="main-collection-grid__empty-title h2">Coming Soon</h2>
+          <p>We're adding new products to this collection soon — check back shortly.</p>
+        {% else %}
+          <h2 class="main-collection-grid__empty-title h2">
+            {{ 'content.no_products_found' | t }}
+          </h2>
+          <p>
+            {{ 'content.use_fewer_filters_html' | t: link: collection.url, class: 'main-collection-grid__empty-link' }}
+          </p>
+        {% endif %}
       </div>
     {% else %}
       {% if enable_infinite_scroll %}
