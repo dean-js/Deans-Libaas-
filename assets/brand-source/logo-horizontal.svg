@@ -1,8 +1,0 @@
-<svg viewBox="0 0 500 80" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" stroke="#1C1B19" stroke-width="1.8">
-    <rect x="15" y="15" width="38" height="38" transform="rotate(45 34 34)"/>
-  </g>
-  <line x1="34" y1="2" x2="34" y2="66" stroke="#B08D46" stroke-width="1.8"/>
-  <text x="82" y="44" font-family="'Century Gothic', 'Futura', 'Poppins', Arial, sans-serif" font-size="32" letter-spacing="0.5" fill="#1C1B19">Dean&#8217;s Libaas</text>
-  <text x="84" y="64" font-family="'Century Gothic', 'Futura', Arial, sans-serif" font-size="10" letter-spacing="3.2" fill="#B08D46">LUXURY PAKISTANI FASHION</text>
-</svg>
